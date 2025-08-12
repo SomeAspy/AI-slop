@@ -19,8 +19,7 @@ I decompiled the macOS driver package using xar and gave gemini the files to sup
 
 ### How to use it
 
-`RW402B-Linux-Driver/rastertorw402b` is built using `gcc -o rastertorw402b rastertorw402b.c -lcups -lcupsimage`.
-
-1. Save `RW402B-Linux-Driver/rastertorw402b` to `/usr/lib/cups/filter/rastertorw402b`
-2. Make the saved file executable (`chmod +x`)
-3. Add the printer via USB using your favorite CUPS printer manager, and use `RW402B-Linux-Driver/Munbyn-RW402B-linux.ppd` as the PPD.
+1. Build `RW402B-Linux-Driver/rastertorw402b.c` using `gcc -o rastertorw402b rastertorw402b.c -lcups -lcupsimage`
+2. Save `RW402B-Linux-Driver/rastertorw402b` to `/usr/lib/cups/filter/rastertorw402b`
+3. Make the saved file executable (`chmod +x`)
+4. Add the printer via USB using your favorite CUPS printer manager, and use `RW402B-Linux-Driver/Munbyn-RW402B-linux.ppd` as the PPD.
